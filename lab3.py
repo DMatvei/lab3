@@ -38,8 +38,10 @@ def la_poly(arr_x, arr_y, n):
  
 
 L4 = la_poly(arr_x, arr_y, n + 1)
+print(f'L4 = {L4}')
+print()
 dfdx = sp.diff(L4, x, k)
-print(f"L'4 = {dfdx}")
+print(f"L'4 = {dfdx} \n")
 Lxm = dfdx.subs(x, arr_x[m])
 print(f"L4'({arr_x[m]}) = {Lxm}")
  
